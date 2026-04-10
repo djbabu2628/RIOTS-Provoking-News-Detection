@@ -3,6 +3,8 @@ AI News Analyzer – Flask Backend
 =================================
 Main application entry point.
 """
+
+import os 
 from flask import Flask, jsonify
 from flask_cors import CORS
 from routes.analyze import analyze_bp
@@ -39,10 +41,10 @@ def create_app() -> Flask:
 
     return app
 
-
+app = create_app()
 # ──────────────────────────────────────────────
 # Run
 # ──────────────────────────────────────────────
-if __name__ == "__name__":
-    app = create_app()
-    app.run(host="0.0.0.0", port=5000, debug=True, use_reloader=False)
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False, use_reloader=False)
