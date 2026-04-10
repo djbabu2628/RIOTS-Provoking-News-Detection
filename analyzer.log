@@ -1,0 +1,272 @@
+2026-04-10 13:21:47 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.103.104:5000
+2026-04-10 13:21:47 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-10 13:21:47 | INFO |  * Restarting with stat
+2026-04-10 13:21:48 | WARNING |  * Debugger is active!
+2026-04-10 13:21:48 | INFO |  * Debugger PIN: 141-177-685
+2026-04-10 13:22:38 | INFO | 127.0.0.1 - - [10/Apr/2026 13:22:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:22:53 | INFO | 127.0.0.1 - - [10/Apr/2026 13:22:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:23:00 | INFO | 127.0.0.1 - - [10/Apr/2026 13:23:00] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:23:05 | INFO | INPUT: BREAKING: Violent riots expected! People must kill and destroy everything. Sources say the government is hiding the truth. You wont believe what happened next!
+2026-04-10 13:23:05 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T07:53:05.144526Z', 'input_length': 159, 'riot_analysis': {'risk_level': 'warning', 'risk_score': 64.4, 'keywords_found': ['kill', 'riot', 'destroy'], 'phrases_found': [], 'details': '\u26a1 Moderate risk detected. Some aggressive keywords or tones found.'}, 'fake_analysis': {'verdict': 'suspicious', 'fake_score': 37.5, 'clickbait': ['breaking', 'what happened next'], 'patterns': ['sources say'], 'details': '\U0001f50d Content has some suspicious markers. Verify with trusted sources.'}, 'overall': {'overall_risk': 'medium', 'confidence': 52.3, 'categories': ['Violence / Riot Incitement', 'Misinformation / Fake News']}}
+2026-04-10 13:23:05 | INFO | 127.0.0.1 - - [10/Apr/2026 13:23:05] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:23:08 | INFO | 127.0.0.1 - - [10/Apr/2026 13:23:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:23:23 | INFO | 127.0.0.1 - - [10/Apr/2026 13:23:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:23:38 | INFO | 127.0.0.1 - - [10/Apr/2026 13:23:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:23:53 | INFO | 127.0.0.1 - - [10/Apr/2026 13:23:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:23:58 | INFO | 127.0.0.1 - - [10/Apr/2026 13:23:58] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-10 13:23:58 | INFO | 127.0.0.1 - - [10/Apr/2026 13:23:58] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-10 13:24:28 | INFO | 127.0.0.1 - - [10/Apr/2026 13:24:28] "[33mGET /static/index.html HTTP/1.1[0m" 404 -
+2026-04-10 13:24:42 | INFO | 127.0.0.1 - - [10/Apr/2026 13:24:42] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:24:54 | INFO | 127.0.0.1 - - [10/Apr/2026 13:24:54] "[33mGET /frontend/index.html HTTP/1.1[0m" 404 -
+2026-04-10 13:24:54 | INFO | 127.0.0.1 - - [10/Apr/2026 13:24:54] "[33mGET /index.html HTTP/1.1[0m" 404 -
+2026-04-10 13:25:07 | INFO | 127.0.0.1 - - [10/Apr/2026 13:25:07] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:25:22 | INFO | 127.0.0.1 - - [10/Apr/2026 13:25:22] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:25:32 | INFO | 127.0.0.1 - - [10/Apr/2026 13:25:32] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:25:32 | INFO | INPUT: BREAKING NEWS: Violent riots expected! People should kill and attack everyone. The government is hiding the truth from you. You won't believe what happened next! Share before this gets deleted! Wake u
+2026-04-10 13:25:32 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T07:55:32.319321Z', 'input_length': 225, 'riot_analysis': {'risk_level': 'dangerous', 'risk_score': 71.8, 'keywords_found': ['kill', 'attack', 'riot'], 'phrases_found': [], 'details': '\u26a0\ufe0f High violence / riot risk detected. Content contains aggressive or hateful language.'}, 'fake_analysis': {'verdict': 'fake', 'fake_score': 70.0, 'clickbait': ["you won't believe", 'breaking', 'what happened next'], 'patterns': ['wake up', 'open your eyes'], 'details': '\U0001f6a8 High probability of fake / misleading content. Multiple red flags detected.'}, 'overall': {'overall_risk': 'high', 'confidence': 71.0, 'categories': ['Violence / Riot Incitement', 'Misinformation / Fake News']}}
+2026-04-10 13:25:32 | INFO | 127.0.0.1 - - [10/Apr/2026 13:25:32] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:25:37 | INFO | 127.0.0.1 - - [10/Apr/2026 13:25:37] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:25:52 | INFO | 127.0.0.1 - - [10/Apr/2026 13:25:52] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:26:07 | INFO | 127.0.0.1 - - [10/Apr/2026 13:26:07] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:26:22 | INFO | 127.0.0.1 - - [10/Apr/2026 13:26:22] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:26:37 | INFO | 127.0.0.1 - - [10/Apr/2026 13:26:37] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:26:44 | INFO | 127.0.0.1 - - [10/Apr/2026 13:26:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:26:52 | INFO | 127.0.0.1 - - [10/Apr/2026 13:26:52] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:27:08 | INFO | 127.0.0.1 - - [10/Apr/2026 13:27:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:27:23 | INFO | 127.0.0.1 - - [10/Apr/2026 13:27:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:27:37 | INFO | 127.0.0.1 - - [10/Apr/2026 13:27:37] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:27:52 | INFO | 127.0.0.1 - - [10/Apr/2026 13:27:52] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:28:07 | INFO | 127.0.0.1 - - [10/Apr/2026 13:28:07] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:28:22 | INFO | 127.0.0.1 - - [10/Apr/2026 13:28:22] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:28:37 | INFO | 127.0.0.1 - - [10/Apr/2026 13:28:37] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:28:52 | INFO | 127.0.0.1 - - [10/Apr/2026 13:28:52] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:29:07 | INFO | 127.0.0.1 - - [10/Apr/2026 13:29:07] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:29:22 | INFO | 127.0.0.1 - - [10/Apr/2026 13:29:22] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:29:37 | INFO | 127.0.0.1 - - [10/Apr/2026 13:29:37] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:34:22 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.103.104:5000
+2026-04-10 13:34:22 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-10 13:34:22 | INFO |  * Restarting with stat
+2026-04-10 13:34:23 | WARNING |  * Debugger is active!
+2026-04-10 13:34:23 | INFO |  * Debugger PIN: 141-177-685
+2026-04-10 13:37:47 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.103.104:5000
+2026-04-10 13:37:47 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-10 13:37:47 | INFO |  * Restarting with stat
+2026-04-10 13:37:48 | WARNING |  * Debugger is active!
+2026-04-10 13:37:48 | INFO |  * Debugger PIN: 141-177-685
+2026-04-10 13:39:24 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.103.104:5000
+2026-04-10 13:39:24 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-10 13:39:24 | INFO |  * Restarting with stat
+2026-04-10 13:39:25 | WARNING |  * Debugger is active!
+2026-04-10 13:39:25 | INFO |  * Debugger PIN: 141-177-685
+2026-04-10 13:47:12 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.103.104:5000
+2026-04-10 13:47:12 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-10 13:49:13 | INFO | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.10.103.104:5000
+2026-04-10 13:49:13 | INFO | [33mPress CTRL+C to quit[0m
+2026-04-10 13:49:13 | INFO |  * Restarting with stat
+2026-04-10 13:49:13 | WARNING |  * Debugger is active!
+2026-04-10 13:49:13 | INFO |  * Debugger PIN: 141-177-685
+2026-04-10 13:50:07 | INFO | 127.0.0.1 - - [10/Apr/2026 13:50:07] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:50:21 | INFO | INPUT: BREAKING: Violent riots expected! People must kill and destroy everything. Sources say the government is hiding the truth.
+2026-04-10 13:50:21 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:20:21.440185Z', 'input_length': 122, 'riot_analysis': {'risk_level': 'warning', 'risk_score': 64.4, 'keywords_found': ['kill', 'riot', 'destroy'], 'phrases_found': [], 'details': '\u26a1 Moderate risk detected. Some aggressive keywords or tones found.'}, 'fake_analysis': {'verdict': 'real', 'fake_score': 20.0, 'clickbait': ['breaking'], 'patterns': ['sources say'], 'details': '\u2705 Content appears credible. No significant fake-news indicators found.'}, 'overall': {'overall_risk': 'medium', 'confidence': 44.4, 'categories': ['Violence / Riot Incitement']}}
+2026-04-10 13:50:21 | INFO | 127.0.0.1 - - [10/Apr/2026 13:50:21] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:51:38 | INFO | INPUT: The weather today is sunny and clear. A great day for a walk in the park with friends and family.
+2026-04-10 13:51:38 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:21:38.265980Z', 'input_length': 97, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 0, 'keywords_found': [], 'phrases_found': [], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'real', 'fake_score': 0, 'clickbait': [], 'patterns': [], 'details': '\u2705 Content appears credible. No significant fake-news indicators found.'}, 'overall': {'overall_risk': 'low', 'confidence': 0, 'categories': ['Clean Content']}}
+2026-04-10 13:51:38 | INFO | 127.0.0.1 - - [10/Apr/2026 13:51:38] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:52:22 | INFO | 127.0.0.1 - - [10/Apr/2026 13:52:22] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:52:22 | INFO | 127.0.0.1 - - [10/Apr/2026 13:52:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-04-10 13:52:27 | INFO | 127.0.0.1 - - [10/Apr/2026 13:52:27] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:52:42 | INFO | 127.0.0.1 - - [10/Apr/2026 13:52:42] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:52:43 | INFO | 127.0.0.1 - - [10/Apr/2026 13:52:43] "[33mGET / HTTP/1.1[0m" 404 -
+2026-04-10 13:52:57 | INFO | 127.0.0.1 - - [10/Apr/2026 13:52:57] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:53:12 | INFO | 127.0.0.1 - - [10/Apr/2026 13:53:12] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:53:27 | INFO | 127.0.0.1 - - [10/Apr/2026 13:53:27] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:53:29 | INFO | 127.0.0.1 - - [10/Apr/2026 13:53:29] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:53:40 | INFO | 127.0.0.1 - - [10/Apr/2026 13:53:40] "[31m[1mGET /api/analyze HTTP/1.1[0m" 405 -
+2026-04-10 13:53:44 | INFO | 127.0.0.1 - - [10/Apr/2026 13:53:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:53:59 | INFO | 127.0.0.1 - - [10/Apr/2026 13:53:59] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:54:14 | INFO | 127.0.0.1 - - [10/Apr/2026 13:54:14] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:54:31 | INFO | 127.0.0.1 - - [10/Apr/2026 13:54:31] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:54:44 | INFO | 127.0.0.1 - - [10/Apr/2026 13:54:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:54:59 | INFO | 127.0.0.1 - - [10/Apr/2026 13:54:59] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:55:16 | INFO | 127.0.0.1 - - [10/Apr/2026 13:55:16] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:55:22 | INFO | 127.0.0.1 - - [10/Apr/2026 13:55:22] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:55:22 | INFO | INPUT: “Urgent! A specific community is planning attacks tonight, people should gather and fight back immediately!
+2026-04-10 13:55:22 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:25:22.500533Z', 'input_length': 107, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 28.6, 'keywords_found': ['attack'], 'phrases_found': ['fight back'], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'real', 'fake_score': 12.5, 'clickbait': ['urgent'], 'patterns': [], 'details': '\u2705 Content appears credible. No significant fake-news indicators found.'}, 'overall': {'overall_risk': 'low', 'confidence': 21.4, 'categories': ['Clean Content']}}
+2026-04-10 13:55:22 | INFO | 127.0.0.1 - - [10/Apr/2026 13:55:22] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:55:29 | INFO | 127.0.0.1 - - [10/Apr/2026 13:55:29] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:55:44 | INFO | 127.0.0.1 - - [10/Apr/2026 13:55:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:55:59 | INFO | 127.0.0.1 - - [10/Apr/2026 13:55:59] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:56:04 | INFO | 127.0.0.1 - - [10/Apr/2026 13:56:04] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:56:04 | INFO | INPUT: “The government announced new education reforms to improve digital learning infrastructure across the country.”
+2026-04-10 13:56:04 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:26:04.754539Z', 'input_length': 111, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 0, 'keywords_found': [], 'phrases_found': [], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'real', 'fake_score': 0, 'clickbait': [], 'patterns': [], 'details': '\u2705 Content appears credible. No significant fake-news indicators found.'}, 'overall': {'overall_risk': 'low', 'confidence': 0, 'categories': ['Clean Content']}}
+2026-04-10 13:56:04 | INFO | 127.0.0.1 - - [10/Apr/2026 13:56:04] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:56:14 | INFO | 127.0.0.1 - - [10/Apr/2026 13:56:14] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:56:26 | INFO | 127.0.0.1 - - [10/Apr/2026 13:56:26] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:56:26 | INFO | INPUT: “Breaking!!! Scientists confirm that drinking 5 liters of cola daily can cure all diseases including cancer. This secret has been hidden for years!!!”
+2026-04-10 13:56:26 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:26:26.428139Z', 'input_length': 150, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 0, 'keywords_found': [], 'phrases_found': [], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'real', 'fake_score': 22.5, 'clickbait': ['breaking', 'secret'], 'patterns': [], 'details': '\u2705 Content appears credible. No significant fake-news indicators found.'}, 'overall': {'overall_risk': 'low', 'confidence': 10.1, 'categories': ['Clean Content']}}
+2026-04-10 13:56:26 | INFO | 127.0.0.1 - - [10/Apr/2026 13:56:26] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:56:29 | INFO | 127.0.0.1 - - [10/Apr/2026 13:56:29] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:56:38 | INFO | 127.0.0.1 - - [10/Apr/2026 13:56:38] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:56:38 | INFO | INPUT: “Breaking!!! Scientists confirm that drinking 5 liters of cola daily can cure all diseases including cancer. This secret has been hidden for years!!!”
+“Urgent! A specific community is planning attacks
+2026-04-10 13:56:38 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:26:38.571185Z', 'input_length': 259, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 28.6, 'keywords_found': ['attack'], 'phrases_found': ['fight back'], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'suspicious', 'fake_score': 35.0, 'clickbait': ['breaking', 'secret', 'urgent'], 'patterns': [], 'details': '\U0001f50d Content has some suspicious markers. Verify with trusted sources.'}, 'overall': {'overall_risk': 'medium', 'confidence': 31.5, 'categories': ['Misinformation / Fake News']}}
+2026-04-10 13:56:38 | INFO | 127.0.0.1 - - [10/Apr/2026 13:56:38] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:56:44 | INFO | 127.0.0.1 - - [10/Apr/2026 13:56:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:56:45 | INFO | 127.0.0.1 - - [10/Apr/2026 13:56:45] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:56:45 | INFO | INPUT: “Urgent! A specific community is planning attacks tonight, people should gather and fight back immediately!”
+2026-04-10 13:56:45 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:26:45.900143Z', 'input_length': 108, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 28.6, 'keywords_found': ['attack'], 'phrases_found': ['fight back'], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'real', 'fake_score': 12.5, 'clickbait': ['urgent'], 'patterns': [], 'details': '\u2705 Content appears credible. No significant fake-news indicators found.'}, 'overall': {'overall_risk': 'low', 'confidence': 21.4, 'categories': ['Clean Content']}}
+2026-04-10 13:56:45 | INFO | 127.0.0.1 - - [10/Apr/2026 13:56:45] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:56:59 | INFO | 127.0.0.1 - - [10/Apr/2026 13:56:59] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:57:14 | INFO | 127.0.0.1 - - [10/Apr/2026 13:57:14] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:57:29 | INFO | 127.0.0.1 - - [10/Apr/2026 13:57:29] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:57:44 | INFO | 127.0.0.1 - - [10/Apr/2026 13:57:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:57:59 | INFO | 127.0.0.1 - - [10/Apr/2026 13:57:59] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:58:12 | INFO | 127.0.0.1 - - [10/Apr/2026 13:58:12] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:58:12 | INFO | INPUT: “Urgent alert! Reports claim a group is planning coordinated violent actions tonight. People are being urged to gather immediately and prepare for confrontation. Spread this message quickly before it 
+2026-04-10 13:58:12 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:28:12.405686Z', 'input_length': 214, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 0, 'keywords_found': [], 'phrases_found': [], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'real', 'fake_score': 22.5, 'clickbait': ['urgent', 'alert'], 'patterns': [], 'details': '\u2705 Content appears credible. No significant fake-news indicators found.'}, 'overall': {'overall_risk': 'low', 'confidence': 10.1, 'categories': ['Clean Content']}}
+2026-04-10 13:58:12 | INFO | 127.0.0.1 - - [10/Apr/2026 13:58:12] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 13:58:14 | INFO | 127.0.0.1 - - [10/Apr/2026 13:58:14] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:58:29 | INFO | 127.0.0.1 - - [10/Apr/2026 13:58:29] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:58:44 | INFO | 127.0.0.1 - - [10/Apr/2026 13:58:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:58:59 | INFO | 127.0.0.1 - - [10/Apr/2026 13:58:59] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:59:14 | INFO | 127.0.0.1 - - [10/Apr/2026 13:59:14] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:59:29 | INFO | 127.0.0.1 - - [10/Apr/2026 13:59:29] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:59:44 | INFO | 127.0.0.1 - - [10/Apr/2026 13:59:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 13:59:59 | INFO | 127.0.0.1 - - [10/Apr/2026 13:59:59] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:00:14 | INFO | 127.0.0.1 - - [10/Apr/2026 14:00:14] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:00:29 | INFO | 127.0.0.1 - - [10/Apr/2026 14:00:29] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:00:33 | INFO |  * Detected change in 'V:\\AIthon\\ai-news-analyzer\\backend\\utils\\helpers.py', reloading
+2026-04-10 14:00:33 | INFO |  * Restarting with stat
+2026-04-10 14:00:35 | WARNING |  * Debugger is active!
+2026-04-10 14:00:35 | INFO |  * Debugger PIN: 141-177-685
+2026-04-10 14:00:44 | INFO | 127.0.0.1 - - [10/Apr/2026 14:00:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:00:59 | INFO | 127.0.0.1 - - [10/Apr/2026 14:00:59] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:01:14 | INFO | 127.0.0.1 - - [10/Apr/2026 14:01:14] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:01:29 | INFO | 127.0.0.1 - - [10/Apr/2026 14:01:29] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:01:44 | INFO | 127.0.0.1 - - [10/Apr/2026 14:01:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:01:59 | INFO | 127.0.0.1 - - [10/Apr/2026 14:01:59] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:02:14 | INFO | 127.0.0.1 - - [10/Apr/2026 14:02:14] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:02:30 | INFO | 127.0.0.1 - - [10/Apr/2026 14:02:30] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:02:44 | INFO | 127.0.0.1 - - [10/Apr/2026 14:02:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:02:59 | INFO | 127.0.0.1 - - [10/Apr/2026 14:02:59] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:03:14 | INFO | 127.0.0.1 - - [10/Apr/2026 14:03:14] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:03:29 | INFO | 127.0.0.1 - - [10/Apr/2026 14:03:29] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:03:44 | INFO | 127.0.0.1 - - [10/Apr/2026 14:03:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:03:59 | INFO | 127.0.0.1 - - [10/Apr/2026 14:03:59] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:04:14 | INFO | 127.0.0.1 - - [10/Apr/2026 14:04:14] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:04:29 | INFO | 127.0.0.1 - - [10/Apr/2026 14:04:29] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:04:44 | INFO | 127.0.0.1 - - [10/Apr/2026 14:04:44] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:05:12 | INFO | 127.0.0.1 - - [10/Apr/2026 14:05:12] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:05:27 | INFO | 127.0.0.1 - - [10/Apr/2026 14:05:27] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:05:42 | INFO | 127.0.0.1 - - [10/Apr/2026 14:05:42] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:05:57 | INFO | 127.0.0.1 - - [10/Apr/2026 14:05:57] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:06:12 | INFO | 127.0.0.1 - - [10/Apr/2026 14:06:12] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:06:27 | INFO | 127.0.0.1 - - [10/Apr/2026 14:06:27] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:06:42 | INFO | 127.0.0.1 - - [10/Apr/2026 14:06:42] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:06:57 | INFO | 127.0.0.1 - - [10/Apr/2026 14:06:57] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:07:12 | INFO | 127.0.0.1 - - [10/Apr/2026 14:07:12] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:07:27 | INFO | 127.0.0.1 - - [10/Apr/2026 14:07:27] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:07:40 | INFO | 127.0.0.1 - - [10/Apr/2026 14:07:40] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 14:07:40 | INFO | INPUT: “Urgent alert! Reports claim a group is planning coordinated violent actions tonight. People are being urged to gather immediately and prepare for confrontation. Spread this message quickly before it 
+2026-04-10 14:07:40 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:37:40.752210Z', 'input_length': 214, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 0, 'keywords_found': [], 'phrases_found': [], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'real', 'fake_score': 22.5, 'clickbait': ['urgent', 'alert'], 'patterns': [], 'details': '\u2705 Content appears credible. No significant fake-news indicators found.'}, 'overall': {'overall_risk': 'low', 'confidence': 10.1, 'categories': ['Clean Content']}}
+2026-04-10 14:07:40 | INFO | 127.0.0.1 - - [10/Apr/2026 14:07:40] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 14:07:41 | INFO | 127.0.0.1 - - [10/Apr/2026 14:07:41] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:07:56 | INFO | 127.0.0.1 - - [10/Apr/2026 14:07:56] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:08:11 | INFO | 127.0.0.1 - - [10/Apr/2026 14:08:11] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:08:26 | INFO | 127.0.0.1 - - [10/Apr/2026 14:08:26] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:08:42 | INFO | 127.0.0.1 - - [10/Apr/2026 14:08:42] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:08:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:08:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:09:08 | INFO | 127.0.0.1 - - [10/Apr/2026 14:09:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:09:23 | INFO | 127.0.0.1 - - [10/Apr/2026 14:09:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:09:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:09:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:09:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:09:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:10:08 | INFO | 127.0.0.1 - - [10/Apr/2026 14:10:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:10:23 | INFO | 127.0.0.1 - - [10/Apr/2026 14:10:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:10:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:10:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:10:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:10:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:11:08 | INFO | 127.0.0.1 - - [10/Apr/2026 14:11:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:11:23 | INFO | 127.0.0.1 - - [10/Apr/2026 14:11:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:11:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:11:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:12:20 | INFO | 127.0.0.1 - - [10/Apr/2026 14:12:20] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:13:20 | INFO | 127.0.0.1 - - [10/Apr/2026 14:13:20] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:13:28 | INFO | 127.0.0.1 - - [10/Apr/2026 14:13:28] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:13:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:13:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:13:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:13:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:14:08 | INFO | 127.0.0.1 - - [10/Apr/2026 14:14:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:14:23 | INFO | 127.0.0.1 - - [10/Apr/2026 14:14:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:14:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:14:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:14:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:14:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:15:08 | INFO | 127.0.0.1 - - [10/Apr/2026 14:15:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:15:12 | INFO | 127.0.0.1 - - [10/Apr/2026 14:15:12] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 14:15:12 | INFO | INPUT: “Breaking!!! Scientists confirm that drinking 5 liters of cola daily can cure all diseases including cancer. This secret has been hidden for years!!!”“Breaking!!! Scientists confirm that drinking 5 li
+2026-04-10 14:15:12 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:45:12.804241Z', 'input_length': 300, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 0, 'keywords_found': [], 'phrases_found': [], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'real', 'fake_score': 22.5, 'clickbait': ['breaking', 'secret'], 'patterns': [], 'details': '\u2705 Content appears credible. No significant fake-news indicators found.'}, 'overall': {'overall_risk': 'low', 'confidence': 10.1, 'categories': ['Clean Content']}}
+2026-04-10 14:15:12 | INFO | 127.0.0.1 - - [10/Apr/2026 14:15:12] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 14:15:23 | INFO | 127.0.0.1 - - [10/Apr/2026 14:15:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:15:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:15:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:15:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:15:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:16:08 | INFO | 127.0.0.1 - - [10/Apr/2026 14:16:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:16:23 | INFO | 127.0.0.1 - - [10/Apr/2026 14:16:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:16:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:16:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:16:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:16:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:17:08 | INFO | 127.0.0.1 - - [10/Apr/2026 14:17:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:17:23 | INFO | 127.0.0.1 - - [10/Apr/2026 14:17:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:17:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:17:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:17:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:17:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:18:04 | INFO | 127.0.0.1 - - [10/Apr/2026 14:18:04] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 14:18:04 | INFO | INPUT: Shocking truth revealed! Government hiding major disaster news, share this before it gets deleted!
+2026-04-10 14:18:04 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:48:04.554977Z', 'input_length': 98, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 0, 'keywords_found': [], 'phrases_found': [], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'suspicious', 'fake_score': 42.5, 'clickbait': ['shocking', 'revealed'], 'patterns': ['government hiding'], 'details': '\U0001f50d Content has some suspicious markers. Verify with trusted sources.'}, 'overall': {'overall_risk': 'medium', 'confidence': 19.1, 'categories': ['Misinformation / Fake News']}}
+2026-04-10 14:18:04 | INFO | 127.0.0.1 - - [10/Apr/2026 14:18:04] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 14:18:08 | INFO | 127.0.0.1 - - [10/Apr/2026 14:18:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:18:23 | INFO | 127.0.0.1 - - [10/Apr/2026 14:18:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:18:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:18:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:18:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:18:38] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 14:18:38 | INFO | INPUT: narendra modi is prime minister
+2026-04-10 14:18:38 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:48:38.997376Z', 'input_length': 31, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 0, 'keywords_found': [], 'phrases_found': [], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'real', 'fake_score': 0, 'clickbait': [], 'patterns': [], 'details': '\u2705 Content appears credible. No significant fake-news indicators found.'}, 'overall': {'overall_risk': 'low', 'confidence': 0, 'categories': ['Clean Content']}}
+2026-04-10 14:18:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:18:38] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 14:18:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:18:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:18:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:18:53] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 14:18:53 | INFO | INPUT: rahul gandhi is prime minister
+2026-04-10 14:18:53 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:48:53.883776Z', 'input_length': 30, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 0, 'keywords_found': [], 'phrases_found': [], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'real', 'fake_score': 0, 'clickbait': [], 'patterns': [], 'details': '\u2705 Content appears credible. No significant fake-news indicators found.'}, 'overall': {'overall_risk': 'low', 'confidence': 0, 'categories': ['Clean Content']}}
+2026-04-10 14:18:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:18:53] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 14:19:00 | INFO | 127.0.0.1 - - [10/Apr/2026 14:19:00] "OPTIONS /api/analyze HTTP/1.1" 200 -
+2026-04-10 14:19:00 | INFO | INPUT: rahul gandhi is prime minister
+2026-04-10 14:19:00 | INFO | OUTPUT: {'success': True, 'timestamp': '2026-04-10T08:49:00.466409Z', 'input_length': 30, 'riot_analysis': {'risk_level': 'safe', 'risk_score': 0, 'keywords_found': [], 'phrases_found': [], 'details': '\u2705 Content appears safe with no significant violent indicators.'}, 'fake_analysis': {'verdict': 'real', 'fake_score': 0, 'clickbait': [], 'patterns': [], 'details': '\u2705 Content appears credible. No significant fake-news indicators found.'}, 'overall': {'overall_risk': 'low', 'confidence': 0, 'categories': ['Clean Content']}}
+2026-04-10 14:19:00 | INFO | 127.0.0.1 - - [10/Apr/2026 14:19:00] "POST /api/analyze HTTP/1.1" 200 -
+2026-04-10 14:19:08 | INFO | 127.0.0.1 - - [10/Apr/2026 14:19:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:19:23 | INFO | 127.0.0.1 - - [10/Apr/2026 14:19:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:19:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:19:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:19:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:19:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:20:08 | INFO | 127.0.0.1 - - [10/Apr/2026 14:20:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:20:23 | INFO | 127.0.0.1 - - [10/Apr/2026 14:20:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:20:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:20:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:20:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:20:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:21:08 | INFO | 127.0.0.1 - - [10/Apr/2026 14:21:08] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:21:23 | INFO | 127.0.0.1 - - [10/Apr/2026 14:21:23] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:21:38 | INFO | 127.0.0.1 - - [10/Apr/2026 14:21:38] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:21:53 | INFO | 127.0.0.1 - - [10/Apr/2026 14:21:53] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:22:20 | INFO | 127.0.0.1 - - [10/Apr/2026 14:22:20] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:23:20 | INFO | 127.0.0.1 - - [10/Apr/2026 14:23:20] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:24:20 | INFO | 127.0.0.1 - - [10/Apr/2026 14:24:20] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:25:20 | INFO | 127.0.0.1 - - [10/Apr/2026 14:25:20] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:26:20 | INFO | 127.0.0.1 - - [10/Apr/2026 14:26:20] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:27:20 | INFO | 127.0.0.1 - - [10/Apr/2026 14:27:20] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:28:20 | INFO | 127.0.0.1 - - [10/Apr/2026 14:28:20] "GET /api/health HTTP/1.1" 200 -
+2026-04-10 14:29:20 | INFO | 127.0.0.1 - - [10/Apr/2026 14:29:20] "GET /api/health HTTP/1.1" 200 -
